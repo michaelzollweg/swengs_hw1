@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "5a6c3e27-e00f-4bbe-82ba-64ccb9135955",
+		"name": "Swengs He1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8000/games/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/games/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"games",
+						""
+					]
+				},
+				"description": "Show all Games"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/games/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tetris\",\n    \"genre\": \"Arcade\",\n    \"year\": \"2019-11-12\",\n    \"multiplayer\" : false,\n    \"price\" : 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/games/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"games",
+						""
+					]
+				},
+				"description": "Create new Game"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/games/1/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/games/1/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"games",
+						"1",
+						""
+					]
+				},
+				"description": "Get element 1"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/games/1/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tetris 2\",\n    \"genre\": \"Cool\",\n    \"year\": \"2019-11-12\",\n    \"multiplayer\": true,\n    \"price\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/games/1/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"games",
+						"1",
+						""
+					]
+				},
+				"description": "Update element 1"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/games/1/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/games/1/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"games",
+						"1",
+						""
+					]
+				},
+				"description": "Delete"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
